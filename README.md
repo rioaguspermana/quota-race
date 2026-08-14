@@ -65,7 +65,7 @@ k6 measures load (RPS, latency). This tool asks: **did 40 overlapping grants bre
 
 ## Ethics
 
-See [docs/ETHICS.md](docs/ETHICS.md). This project does not authorize testing anyone else’s systems.
+See [docs/ETHICS.md](docs/ETHICS.md). Why sequential tests miss this: [docs/PROBLEM.md](docs/PROBLEM.md). This project does not authorize testing anyone else’s systems.
 
 ## License
 

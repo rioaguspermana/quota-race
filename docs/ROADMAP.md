@@ -1,33 +1,22 @@
-# Roadmap (after MVP)
+# Roadmap
 
-## v0.2
+Not promises — only if people actually use the CLI.
 
-- GitHub Action wrapper  
-- More scenario templates: seat booking, one-time coupon, trial flag  
-- JUnit / TAP output for CI  
-- Better timing stats (optional)
+## Next
 
-## v0.3
+- GitHub Action wrapper
+- More example configs (seats, coupon, trial flag)
+- Optional JUnit/TAP for CI
+- `jsonpath` check on follow-up body (`remaining <= N`)
 
-- Import from curl / HAR (subset)  
-- Follow-up assertion helpers (`jsonpath` remaining == N)  
+## Later
+
+- curl/HAR import (subset)
 - Docker image
+- Tighter burst sync (still not a pentest suite)
 
-## Later (only if validated)
+## Not this project
 
-- HTTP/2 single-packet / tighter sync strategies (advanced)  
-- Hosted runner SaaS  
-- Org scenario library  
-
-## Explicit non-roadmap (near term)
-
-- Full Burp Suite replacement  
-- Becoming a general pen-test framework  
-- Bundling unrelated commercial products  
-
-## Validation signals to watch
-
-- GitHub stars + issues from strangers  
-- “Used in CI” comments  
-- PH / HN feedback quality  
-- Requests for hosted vs more CLI features
+- Replacing k6 / Burp
+- Hosted SaaS until the CLI has real users
+- Bundling unrelated commercial products
