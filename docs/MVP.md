@@ -48,7 +48,7 @@ quota-race run -c examples/wallet-quota.yaml --json
 - [x] Same config against fixed (mutex/atomic) demo → PASS
 - [x] README explains difference vs k6 in 5 lines
 - [x] Ethics section visible
-- [ ] Tag `v0.1.0` on GitHub
+- [x] Tag `v0.1.0` on GitHub
 
 ## Suggested implementation order
 
