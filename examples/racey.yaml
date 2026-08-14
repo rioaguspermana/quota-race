@@ -1,0 +1,18 @@
+# Own-API notice: this file targets loopback only.
+# quota-race refuses non-loopback hosts unless i_own_this_api / --i-own-this-api.
+
+request:
+  method: POST
+  url: http://127.0.0.1:8090/take
+concurrency: 40
+attempts: 3
+timeout_ms: 3000
+invariant:
+  ok_status: 200
+  max_ok: 10
+follow_up:
+  method: GET
+  url: http://127.0.0.1:8090/status
+reset:
+  method: POST
+  url: http://127.0.0.1:8090/reset

@@ -1,0 +1,30 @@
+name: smoke
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+      - name: test
+        run: go test ./...
+      - name: racey demo fails invariant
+        run: |
+          go run ./examples/counter -addr 127.0.0.1:8090 -racey -limit 10 &
+          sleep 1
+          set +e
+          go run ./cmd/quota-race run -c examples/racey.yaml
+          code=$?
+          set -e
+          test "$code" -eq 1
+      - name: fixed demo holds invariant
+        run: |
+          go run ./examples/counter -addr 127.0.0.1:8091 -limit 10 &
+          sleep 1
+          go run ./cmd/quota-race run -c examples/fixed.yaml
