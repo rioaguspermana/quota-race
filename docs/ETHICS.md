@@ -14,7 +14,7 @@
 
 ## Product copy requirements
 
-Every user-facing surface (README, `--help`, PH description) should include a short **own-API only** notice.
+Every user-facing surface (README, `--help`) should include a short **own-API only** notice.
 
 ## Security research
 

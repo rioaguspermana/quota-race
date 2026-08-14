@@ -29,7 +29,7 @@ Ship a usable **CLI** that a stranger can run in &lt; 5 minutes on an API they o
 - HTTP/2 single-packet attacks (nice later; PortSwigger-style)  
 - GUI  
 - Paid features  
-- WhatsApp / Kas / KirimNota integration  
+- WhatsApp / other product integrations  
 
 ## Demo server (recommended)
 
@@ -56,5 +56,4 @@ quota-race run -c examples/wallet-quota.yaml --json
 2. Burst client + report  
 3. Config schema  
 4. README + GIF  
-5. GitHub Action smoke test on demo  
-6. Soft PH assets (gallery, first comment maker story)
+5. GitHub Action smoke test on demo

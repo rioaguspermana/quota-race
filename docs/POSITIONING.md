@@ -29,13 +29,7 @@ unlike load testers that optimize for RPS, and unlike sequential QA that never o
 | Postman | Manual / sequential API checks | Concurrent overlap |
 | RaceGuard / racey / etc. | Similar race detection | Clear quota/limit scenarios + app-dev DX + example servers + CI story |
 
-Be honest in docs: stand on related tools’ shoulders; differentiate with **quota/limit templates**, **simple success rules**, **dual demos**, **Indonesian+EN docs optional**.
-
-## Product Hunt one-liners (draft)
-
-- “Find quota races before production does.”  
-- “Concurrent requests vs your business limits — pass or fail.”  
-- “TOCTOU checks for HTTP quotas, open source.”
+Be honest in docs: stand on related tools’ shoulders; differentiate with **quota/limit templates**, **simple success rules**, **dual demos**, **CI-friendly report**.
 
 ## What not to claim
 

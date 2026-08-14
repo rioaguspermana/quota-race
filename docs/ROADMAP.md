@@ -23,7 +23,7 @@
 
 - Full Burp Suite replacement  
 - Becoming a general pen-test framework  
-- Bundling Kas / KirimNota  
+- Bundling unrelated commercial products  
 
 ## Validation signals to watch
 
